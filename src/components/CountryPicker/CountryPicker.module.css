@@ -1,0 +1,16 @@
+.picker {
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .picker {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .picker {
+    width: 40%;
+  }
+}

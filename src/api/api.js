@@ -24,9 +24,9 @@ export const fetchDailyData = async () => {
     const response = await axios.get(`${url}/daily`)
     const { data } = response
 
-    const filteredData = data.filter((data, index) => {
-      if (index % 5 === 0) return data
-    })
+    const filteredData = data.filter((data, index) =>
+      index % 7 === 0 ? data : null
+    )
 
     const modifiedData = filteredData.map((dailyData) => ({
       confirmed: dailyData.confirmed.total,

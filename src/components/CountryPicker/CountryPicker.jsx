@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { SelectPicker } from "rsuite"
-import { countries, fetchCountries } from "../../api/api"
+import { fetchCountries } from "../../api/api"
 // import data from "../data"
 import styles from "./CountryPicker.module.css"
 
